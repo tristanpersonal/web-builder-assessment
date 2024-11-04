@@ -1,6 +1,6 @@
 #section7{
     background-color: #FFF;
-    padding: 5rem 2rem;
+    padding: 1rem 2rem 5rem 2rem;
 }
 
 .section7-container, .sub1, .sub2{
@@ -9,6 +9,11 @@
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
+    column-gap: 1rem;
+}
+
+.sub2{
+    padding-top: 2rem;
 }
 
 .section7-content img {

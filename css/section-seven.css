@@ -17,6 +17,20 @@
     object-fit: contain; 
 }
 
+.section7-icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.section7-icons .section7-text{
+    max-width: 550px;
+    text-align: justify;
+    padding: 2rem 0;
+    line-height: 2rem;
+    font-family: "Karla", sans-serif;
+}
+
 .section7-picture img{
     width: 400px;
     max-width: 100%;
@@ -40,9 +54,21 @@
     font-weight: normal;
 }
 
-@media (max-width: 999px) {
+@media (max-width: 1163px) {
     .section7-container{
         flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .section7-icons .section7-text{
+        max-width: 100%;
+    }
+    .section7-icons{
+        justify-content: center;
+        align-items: center;
+    }
+    .section7-picture img{
+        width: 500px;
     }
 }
 

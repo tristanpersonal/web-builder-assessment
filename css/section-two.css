@@ -1,0 +1,192 @@
+/* Main section styles for section 2 */
+#section2{
+    height: auto;
+}
+
+.white-background{
+    background-color: #FFF;
+    margin: 0;
+}
+
+/* Header styles for section 2 */
+.section2-header h1{
+    font-family: "Playfair", serif;
+    font-size: 3rem;
+    text-align: center;
+    padding: 5rem 0px;
+}
+
+/* Flex container for icon main sections */
+.icon-maincontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: baseline;
+    padding-top: 30px;
+}
+
+/* Styles for each individual icon container */
+.icon-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 300px;
+    text-align: center;
+    font-family: "Karla", serif;
+}
+
+/* Image styles inside the icon containers */
+.icon-container img {
+    width: 200px;
+    height: 150px;
+    object-fit: contain; 
+}
+
+.icon-container h3{
+    font-size: 1.5rem;
+}
+
+.icon-container p{
+    padding-top: 20px;
+}
+
+.single-image-container{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+/* General image styles for one picture and right column images */
+.one-picture, 
+.right-column img{
+    max-width: 100%;
+    height: auto;
+    padding: 0px 1rem;
+}
+
+/* Flex container for column layout */
+.column-layout {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 40px;
+}
+
+/* Styles for text container */
+.text-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: #FFF;
+    padding: 5rem 0;
+    align-items: center;
+}
+
+.text-container ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+.text-container ul li{
+    padding: 5px 0;
+}
+
+.text-container h2{
+    font-size: 3.5rem;
+    font-family: "Playfair", serif;
+}
+
+/* Flex container for the second column layout */
+.second-column-layout {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+}
+
+.left-column {
+    align-items: center;
+    font-weight: bold;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+.left-gap{
+    width: 550px;
+}
+
+.left-column span{
+    font-size: 7rem;
+    line-height: 6rem;
+    color: #FFFFFF;
+    font-family: "Playfair", serif;
+}
+
+/* Styles for the right column in both column layouts */
+.right-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.right-column img {
+    width: 100%; 
+    height: auto; 
+    max-width: 500px; 
+}
+
+.right-gap{
+    width: 550px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1049px) {
+    .left-column {
+        justify-content:flex-start;
+    }
+    .left-column span{
+        font-size: 5rem;
+        line-height: 4rem;
+        padding-bottom: 2rem;
+        padding-left: 1rem;
+    }
+    .right-column{
+        flex-direction: row;
+    }
+    .right-column img{
+        width: 350px;
+    }
+}
+@media (max-width: 712px) {
+    .right-column{
+        flex-direction: column;
+    }
+    .right-column img{
+        max-width: 500px;
+        width: 100%;
+    }
+}
+@media (max-width: 599px) {
+    .icon-container{
+        margin-top: 30px;
+    }
+    .icon-maincontainer{
+        padding-top: 0;
+    }
+}
+@media (max-width: 524px) {
+    .left-column span{
+        font-size: 3.8rem;
+        line-height: 3rem;
+    }
+    .text-container h2{
+        text-align: center;
+        line-height: 3rem;
+    }
+}

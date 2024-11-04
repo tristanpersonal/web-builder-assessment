@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="css/section-one.css">
+    <link rel="stylesheet" href="css/section-two.css">
+    <link rel="stylesheet" href="css/section-three.css">
+    <link rel="stylesheet" href="css/section-four.css">
+    <link rel="stylesheet" href="css/section-five.css">
+    <link rel="stylesheet" href="css/section-six.css">
+    <link rel="stylesheet" href="css/section-seven.css">
+    <link rel="stylesheet" href="css/section-eight.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <img src="https://res.cloudinary.com/luxuryp/images/w_1920,c_limit,f_auto,q_auto/tprhoiglqzbp9mbu8x8s/jhsereno-light" alt="Responsive Header Image" class="responsive-image">
+            <ul class="main-tabs-container">
+                <!-- About Us Dropdown -->
+                <li class="dropdown" onclick="toggleDropdown(this)">
+                    <a href="javascript:void(0)">About Us <span class="dropdown-icon">▼</span></a>
+                    <ul class="dropdown-menu">
+                        <li class="tabs"><a href="#meet-team">Meet Team</a></li>
+                        <li class="tabs"><a href="#testimonials">Testimonials</a></li>
+                        <li class="tabs"><a href="#contact-us">Contact Us</a></li>
+                    </ul>
+                </li>
+                <!-- Services Dropdown -->
+                <li class="dropdown" onclick="toggleDropdown(this)">
+                    <a href="javascript:void(0)">Services <span class="dropdown-icon">▼</span></a>
+                    <ul class="dropdown-menu">
+                        <li class="tabs"><a href="#search-for-home">Search for Home</a></li>
+                        <li class="tabs"><a href="#home-evaluation">Home Evaluation</a></li>
+                        <li class="tabs"><a href="#our-communities">Our Communities</a></li>
+                        <li class="tabs"><a href="#home-across-america">Home Across America</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="burger-icon" onclick="toggleMenu()">☰</div>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <!-- section1 -->
+        <section id="section1">
+            <!-- Centered text area for the section title -->
+            <div class="center-text">
+                <h1>Services</h1>
+            </div>
+
+            <!-- Sticky bottom container for search and appointment booking -->
+            <div class="bottom-container sticky" id="stickyObject">
+                <!-- Search input field with an icon -->
+                <div class="search-container">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" placeholder="Search by Address of Area" onfocus="this.placeholder = ''" 
+                    onblur="this.placeholder = 'Search by Address of Area'" class="search-bar">
+                </div>
+                
+                <!-- Appointment booking text and icon -->
+                <p class="appointment-text">
+                    <span class="appointment-link">Book an appointment</span>
+                    <i class="fas fa-arrow-right arrow-icon" onclick="openOverlay()"></i>
+                </p>
+            </div>
+        </section>
+
+        <!-- section2 -->
+        <section id="section2">
+            <!-- Main text-headline -->
+            <div class="section2-header white-background">
+                <h1>Comprehensive Marketing Plan</h1>
+            </div>
+            
+            <!-- First Icon Container -->
+            <div class="icon-maincontainer white-background">
+                <article class="icon-container">
+                    <img src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/rmtn3r5zpsljdsncbwa4/image-007" alt="Responsiveness icon">
+                    <h3>Responsiveness</h3>
+                    <p>I am always available via phone, text, or email</p>
+                </article>
+                <article class="icon-container">
+                    <img src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/ks8ztlvw2b35q5qgs6xn/image-011" alt="Syndication icon">
+                    <h3>Syndication</h3>
+                    <p>I market your properly locally, nationally, and internationally</p>
+                </article>
+            </div>
+            <!-- Second Icon Container -->
+            <div class="icon-maincontainer white-background">
+                <article class="icon-container">
+                    <img src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/zr3bugldblvebixagfs1/image-009" alt="Virtual tour icon">
+                    <h3>Virtual Tour</h3>
+                    <p>Let's make your home stand out with a high quality virtual tour.</p>
+                </article>
+                <article class="icon-container">
+                    <img src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/dywgmsgzddtcsqxagbwh/image-013" alt="Photography icon">
+                    <h3>Photography</h3>
+                    <p>Beautiful, high and photography is a central part of our marketing plan for your property.</p>
+                </article>
+            </div>
+
+            <!-- Single image -->
+            <figure class="single-image-container white-background">
+                <img src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/hqguvxyyi5jciyrzy35v/page-3" alt="luxury images" class="one-picture">
+            </figure>
+
+            <!-- First column layout: Displays decor guidance -->
+            <div class="column-layout">
+                <aside class="left-column left-gap">
+                    <span>Decor Guidance</span>
+                </aside>
+                <div class="right-column">
+                    <img src="https://res.cloudinary.com/luxuryp/images/w_1280,c_limit,f_auto,q_auto/ghtq7jtce7tsgdjtosrs/image-025" alt="Decor image 1">
+                    <img src="https://res.cloudinary.com/luxuryp/images/w_1280,c_limit,f_auto,q_auto/axx0whb7xfmlwhvcckrr/image-023" alt="Decor image 2">
+                </div>
+            </div>
+
+            <!-- Text container: Outlines staging expertise -->
+            <div class="text-container">
+                <h2>My Staging Expertise</h2>
+                <ul>
+                    <li>Unclutter and organize your home</li>
+                    <li>Neatly arrange drawers and cabinets</li>
+                    <li>Keep pets outdoors or off the premises</li>
+                    <li>Play soft music</li>
+                </ul>
+            </div>
+
+            <!-- Second column layout: Showcases intentional layout concepts -->
+            <div class="second-column-layout">
+                <aside class="left-column">
+                    <span>Intention al Layout</span>
+                </aside>
+                <div class="right-column right-gap">
+                    <img src="https://res.cloudinary.com/luxuryp/images/w_1280,c_limit,f_auto,q_auto/tvntwvzwsjyi3ndwtpux/image-022" alt="Decor image 3">
+                    <img src="https://res.cloudinary.com/luxuryp/images/w_1280,c_limit,f_auto,q_auto/lpaq7euqjebackcuwsdu/image-024" alt="Decor image 4">
+                </div>
+            </div>
+        </section> 
+
+        <!-- section3 -->
+        <section id="section3">
+            <!-- Main text-headline -->
+            <div class="section3-header white-background">
+                <h1>The Selling Process</h1>
+            </div>
+
+            <!-- The Selling Process container -->
+            <div class="selling-process-container">
+                <div class="stats-container">
+                    <div class="stats-item">
+                        <h1 class="count" data-target="1">0</h1>
+                        <div class="progress-bar"><div class="progress"></div></div>
+                        <p>Initial Consultation & Planning</p>
+                    </div>
+                    <div class="stats-item">
+                        <h1 class="count" data-target="2">0</h1>
+                        <div class="progress-bar"><div class="progress"></div></div>
+                        <p>Devise & Execute Marketing Plan</p>
+                    </div>
+                </div>
+                <div class="stats-container">
+                    <div class="stats-item">
+                        <h1 class="count" data-target="3">0</h1>
+                        <div class="progress-bar"><div class="progress"></div></div>
+                        <p>Review Offers & Reach Agreement with Buyer</p>
+                    </div>
+                    <div class="stats-item">
+                        <h1 class="count" data-target="4">0</h1>
+                        <div class="progress-bar"><div class="progress"></div></div>
+                        <p>Complete Transaction Process</p>
+                    </div>
+                    <div class="stats-item">
+                        <h1 class="count" data-target="5">0</h1>
+                        <div class="progress-bar"><div class="progress"></div></div>
+                        <p>After - Sale Services</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- The Buying Process container -->
+            <div class="buying-process-container">
+                <div class="buying-process-wrapper">
+                    <div class="buying-process-title">
+                        <span>The Buying Process</span>
+                    </div>
+                    <div class="stats-wrapper">
+                        <div class="stats-element">
+                            <h1>1</h1>
+                            <p>Initial Consultation & Planning</p>
+                        </div>
+                        <div class="stats-element">
+                            <h1>2</h1>
+                            <p>Search for a home & get pre-approved</p>
+                        </div>
+                        <div class="stats-element">
+                            <h1>3</h1>
+                            <p>Submit an Offer</p>
+                        </div>
+                        <div class="stats-element">
+                            <h1>4</h1>
+                            <p>Complete settlement process</p>
+                        </div>
+                    </div>
+                </div>
+            </div>      
+        </section>
+
+        <!-- section4 -->
+        <section id="section4">
+            <div class="section4-container">
+                <div class="real-state-success">
+                    <img src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/azjfmtzx6evxpubynfci/edit-page-11r2" alt="real estate success picture">
+                    <h2>Over 33 Years of Real Estate Success</h2>
+                    <p>We provide every one of our clients with a level of service they won’t find anywhere else. We give them what they need, often before they know they need it. ​​​​​​​In real estate, almost everything can be negotiated. When you choose Hansen Partners It is experience is 100% nonnegotiable. ​​​​​​​ ​​​​​​​And it’s an experience like no other.</p>
+                </div>
+                <div class="create-unforgettable-experience">
+                    <img src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/m5ea1kpipv5tiflnfx8t/edited-p-12" alt="Unforgettable experience picture">
+                    <h2>We Want To Create An Unforgettable Experience For You...</h2>
+                    <p>We combine data gained from your home’s Comparative Market Analysis with local market research to create a marketing plan designed to help you meet your selling goals. Your home’s carefully designed plan will include a range of online, print, and other marketing tools targeted to the best-qualified pool of buyers. ​​​​​​​ Successfully marketing a home in today’s real estate environment requires a firm with experience and flexibility. Hansen Partners provides both.</p>
+                </div>
+            </div>
+            <div class="partners-communication">
+                <div class="partners-communication-column">
+                    <div class="partners-communication-leftcolumn">
+                        <img src="https://res.cloudinary.com/luxuryp/images/w_1280,c_limit,f_auto,q_auto/fuammgjubhjfvgcqleef/edit-image-056" alt="partners-communication picture">
+                    </div>
+                    <div class="partners-communication-rightcolumn">
+                        <h2>The Hansen Partners Communications Tablet</h2>
+                        <p>We have created this as a wonderful tool so that we can communicate with you daily, provide you with updates on what is happening with your home. We are available at the with a click of your tablet.</p>
+                        <h3>Benefits:</h3>
+                        <ul>
+                            <li>Review all documents and sign in the comfort of your home or anywhere.</li>
+                            <li>Stay up to date on all marketing activities, review materials, photos, etc. in real time.</li>
+                            <li>Meet with us face to face on our Gotomeeting.com platform to go over and discuss the events of the week.</li>
+                            <li>You have your own email assigned just for you and your common space to quickly write a note, or quickly send a video message to us for fast communication using our Bomb bomb video messaging system.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- section 5 -->
+        <section id="section5">
+            <div class="market-your-home-headtext">
+                <h2>We Market Your Home to The World</h2>
+                <p style="font-weight: bold; padding: 1rem 0;">Our Online Marketing Strategy</p>
+                <p>​​​​​​​The Bay Area remains one of the world's most sought-after regions to live in, and when looking to sell, it is vital that your home be marketed online to audiences locally, nationally, and internationally.</p>
+            </div>
+            <div class="cards-container">
+                <div class="card1 cards">
+                    <h3>Local Exposure</h3>
+                    <p>Through our partnership with Nextdoor, the private online social network now used in over 80% of U.S. neighborhoods and virtually all Bay Area neighborhoods, we make sure your home receives targeted local exposure. When you list your home with Hansen Partners it will automatically appear on Nextdoor in your neighborhood.</p>
+                </div>
+                <div class="card2 cards">
+                    <h3>National Exposure</h3>
+                    <p>We secure strategic positioning and enhancement on Realtor.com, Trulia, and Zillow, driving more consumers to your home and increasing exposure. We  will receive every inquiry about your property directly.</p>
+                </div>
+                <div class="card3 cards">
+                    <h3>Internal Exposure</h3>
+                    <p>To expose your luxury listing to millions of potential homebuyers worldwide, we promote on prominent international real estate portals, including: Wall Street Journal, LuxuryPortfolio.com, LuxuryRealEstate.com, LeadingRE.com, UniqueHomes.com, 
+                        China.apr.com, Caimeiju, Juwai, Country Life UK</p>
+                </div>
+            </div>
+            <div class="market-your-home-bottom">
+                <img src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/olcvsnzpdrd5tov8dbci/image-057" alt="">
+            </div>
+        </section>
+
+        <!-- section 6 -->
+        <section id="section6">
+            <!-- Partners Luxury Container -->
+            <div class="partners-luxury-container">
+                <div class="partners-column1">
+                    <div class="partners-column1-images">
+                        <div class="images-icons-container">
+                            <img src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/p4rjc7oqvxtccrdqejbt/image-060" alt="logo picture">
+                            <img src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/ichuh7qj1rsu7mqxpl5p/image-069" alt="logo picture">
+                            <img src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/t3i3guvh1dnpwu8mrvuf/image-070" alt="logo picture">
+                        </div>
+                        <p style="padding-top: 1rem;">Leading Real Estate Companies of The World® & Luxury Portfolio International</p>
+                        <p style="padding: 2rem 0;">JRockcliff is a founding member of Luxury Portfolio International®, the luxury division of Leading Real Estate Companies of the World®. With more than 500 member firms around the world, Our luxury listings are exposed to a vast global audience and reach potential buyers and investors in over 50 countries.</p>
+                        <p style="text-align: center;">Who's Who in Luxury Real Estate</p>
+                        <p style="padding: 2rem 0;">Who’s Who in Luxury Real Estate is a global collection of luxury real estate brokers.</p>
+                    </div>
+                </div>
+                <div class="partners-column2">
+                    <img src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/og3ockhby4gghmrdfseo/edited-p-19" alt="partners in luxury picture">
+                </div>
+            </div>
+
+            <!-- we're global -->
+            <div class="global-container">
+                <div class="global-column1">
+                    <img src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/ebvif7iqcx0lcjlvwyuz/edited-page-20" alt="global picture">
+                </div>
+                <div class="global-column2">
+                    <p>Through our international affiliations, we have a strong presence in over 50 countries. Our luxury listings are sent to prominent international real estate sites, reaching over 70 million potential buyers and investors worldwide through our relationships with:</p>
+                    <div class="images-icons-container">
+                        <img src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/p4rjc7oqvxtccrdqejbt/image-060" alt="logo picture">
+                        <img src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/ichuh7qj1rsu7mqxpl5p/image-069" alt="logo picture">
+                        <img src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/t3i3guvh1dnpwu8mrvuf/image-070" alt="logo picture">
+                    </div>
+                    <p>We also have several well-positioned affiliate offices in China, providing our clients with access to buyers in Hong Kong, Shanghai, and Beijing.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- section 7 -->
+        <section id="section7">
+            <div class="section7-container">
+                <div class="section7-icons">
+                    <div class="sub1">
+                        <div class="section7-content">
+                            <img src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/rmtn3r5zpsljdsncbwa4/image-007" alt="responsive icon">
+                            <h2>Responsive</h2>
+                            <p>I am always available via phone, text, or email to answer your questions in a timely manner.</p>
+                        </div>
+                        <div class="section7-content">
+                            <img src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/ks8ztlvw2b35q5qgs6xn/image-011" alt=" syndication icon">
+                            <h2>Syndication</h2>
+                            <p>I am always available via phone, text, or email to answer your questions in a timely manner.</p>
+                        </div>
+                    </div>
+                    <div class="sub2">
+                        <div class="section7-content">
+                            <img src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/zr3bugldblvebixagfs1/image-009" alt="vitrual tour icon">
+                            <h2>Virtual Tour</h2>
+                            <p>Let’s make your home stand out with a high quality virtual tour.</p>
+                        </div>
+                        <div class="section7-content">
+                            <img src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/qljffx423kswkhh1oyc3/image-081" alt="drone photography icon">
+                            <h2>Drone Photography</h2>
+                            <p>Beautiful photography is a central part of our marketing plan for your property.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="section7-picture">
+                    <img src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/vxnwvueubpgtfzn1k3cs/edited-p25" alt="">
+                </div>
+            </div>
+        </section>
+        
+        <!-- section8 -->
+        <section id="section8">
+            <div class="section8-content">
+                <h2>Work With Us</h2>
+                <p>With decades of experience in luxurious Tri Valley real estate, our team is here to ensure that your dreams are a reality. Let us guide you through your home buying journey, contact us today!</p>
+                <button onclick="openOverlay()">Contact us</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- side menu -->
+    <div class="side-menu" id="sideMenu">
+        <ul>
+            <li class="list-item">Home</li>
+            <li class="list-item-mobile">Meet the team</li>
+            <li class="list-item-mobile">Search for Homes</li>
+            <li class="list-item-mobile">Our Communities</li>
+            <li class="list-item-mobile">Home Evaluation</li>
+            <li class="list-item-mobile">Services</li>
+            <li class="list-item-mobile">Homes Across America</li>
+            <li class="list-item-mobile">Testimonials</li>
+            <li>Contact Us</li>
+        </ul>
+    </div>
+
+    <!-- Overlay for contact us information -->
+    <div class="overlay" id="contactOverlay">
+        <span class="close-btn" onclick="closeOverlay()">&times;</span>
+        <div class="overlay-content">
+            <!-- Right Column: Input Form -->
+            <div class="overlay-right">
+                <h2>Submit A Message</h2>
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <input type="tel" placeholder="Phone">
+                <textarea placeholder="Message"></textarea>
+                <p>By providing Julie Hansen Partnership your contact information, you acknowledge and agree to our <u>Privacy Policy</u> and consent to receiving marketing communications, including through automated calls, texts, and emails, some of which may use artificial or prerecorded voices. This consent isn’t necessary for purchasing any products or services and you may opt out at any time. To opt out from texts, you can reply, ‘stop’ at any time. To opt out from emails, you can click on the unsubscribe link in the emails. Message and data rates may apply.</p>
+                <button>Send</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="top-footer">
+            <div class="top-footer-column1">
+                <div class="top-footer-headtext">
+                    <h2>Julie Hansen Partnership</h2>
+                    <p style="max-width: 100%; width: 500px;">An elite group of the East Bay’s most talented and visionary real estate professionals believed buyers and sellers deserved more from their real estate company. More service. More resources. More integrity. More global reach. In a word, more of everything people should expect when they buy or sell their homes.</p>
+                </div>
+                <div class="top-footer-information-container">
+                    <div class="address-container">
+                        <h2>Address</h2>
+                        <p>4733 Chabot Drive #100 <br>Pleasanton, CA 94588</p>
+                        <p style="padding: 1rem 0;">Julie Hansen-Orvis | CA DRE# 00934447</p>
+                    </div>
+                    <div class="contact-container">
+                        <h2>Contact Information</h2>
+                        <p>(925) 553-6707<br>luxuryhomesinwc@icloud.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="top-footer-column2">
+                <h2>Newsletter</h2>
+                <p style="line-height: 1.5rem;">Subscribe to our Newsletter for latest news and updates. Stay tuned!</p>
+                <input type="email" placeholder="Email" style="margin-top: 2rem; border: none; padding: 1rem 0;">
+                <hr>
+                <div class="privacy-policy-container">
+                    <input type="checkbox" id="privacy-checkbox">
+                    <p>By providing Julie Hansen Partnership your contact information, you acknowledge and agree to our <u>Privacy Policy</u> and consent to receiving marketing communications, including through automated calls, texts, and emails, some of which may use artificial or prerecorded voices. This consent isn’t necessary for purchasing any products or services and you may opt out at any time. To opt out from texts, you can reply, ‘stop’ at any time. To opt out from emails, you can click on the unsubscribe link in the emails. Message and data rates may apply.</p>
+                </div>
+                <button class="subscribe-btn">Subscribe</button>
+            </div>
+        </div>
+        <div class="middle-footer">
+            <div class="middle-footer-column1">
+                <a href="#facebook" class="icon fb-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#linkedin" class="icon li-icon"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <div class="middle-footer-column2">
+                <img src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/zbesma34ygwklawiysod/dark-realtor-logo_x1vczu" alt="">
+                <img src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/siun2nwoji9w7v0mssvy/dark-equal-logo_gahxpa" alt="">
+                <img src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/qje0mcix0r0qeoiikumu/sereno-logo" alt="">
+            </div>
+        </div>
+        <div class="bottom-footer">
+            <div class="bottom-footer-column1">
+                <p>Website Designed & Developed by <u>Luxury Presence</u></p>
+            </div>
+            <div class="bottom-footer-column2">
+                <p>Copyright 2024 | Privacy Policy</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

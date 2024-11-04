@@ -1,0 +1,116 @@
+#section5{
+    height: auto;
+    padding: 5rem 0;
+    position: relative;
+}
+
+.market-your-home-headtext{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.market-your-home-headtext h2{
+    font-family: "Playfair", serif;
+    color: #FFF;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.market-your-home-headtext p{
+    text-align: center;
+    color: #FFF;
+    padding: 0 2rem;
+}
+
+.cards-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: baseline;
+    flex-wrap: wrap;
+    padding-top: 3rem;
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 300px;
+    background-color: #ffffffaf;
+    padding: 2rem;
+    font-family: "Karla", serif;
+}
+
+.cards h3{
+    padding: 1rem 0;
+    font-weight: bold;
+}
+
+.cards p{
+    line-height: 1.5rem;
+}
+
+.market-your-home-bottom{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.market-your-home-bottom img{
+    margin: 0;
+    padding: 0;
+    width: 150px;
+}
+
+@media (max-width: 1199px) {
+    .cards-container{
+        align-items: center;
+        row-gap: 2rem;
+    }
+}
+
+@media (max-width: 799px) {
+    .cards-container{
+        align-items: baseline;
+        row-gap: 0;
+    }
+}
+
+@media (max-width: 400px) {
+    #section5{
+        height: auto;
+        padding-bottom: 1rem;
+    }
+    .market-your-home-bottom{
+        background-color: #FFF;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media (max-width: 493px) {
+    .market-your-home-headtext h2{
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 417px) {
+    .market-your-home-headtext h2{
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .market-your-home-headtext h2{
+        font-size: 1.5rem;
+    }
+}

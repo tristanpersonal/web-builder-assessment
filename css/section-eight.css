@@ -1,0 +1,182 @@
+#section8 {
+    font-family: "Open Sans", serif;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    url('https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/skkve0aqzhkkyiytn92d/work-with-us') center;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 5rem 0;
+}
+
+.section8-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5rem;
+    max-width: 100%;
+}
+
+.section8-content h2 {
+    font-size: 4rem;
+    font-weight: normal;
+    text-align: center;
+    font-family: "Playfair", serif;
+    color: #FFF;
+}
+
+.section8-content p {
+    text-align: center;
+    padding: 2rem 0;
+    width: 600px;
+    color: #FFF;
+    font-family: "Karla", serif;
+    line-height: 1.5rem;
+}
+
+.section8-content button {
+    padding: 1.3rem 4rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: "Karla", sans-serif;
+    background-color: transparent;
+    border: 2px solid #FFF;
+    color: #FFF;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.section8-content button:hover {
+    background-color: #FFF;
+    color: #000;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1010;
+    font-family: "Karla" sans-serif;
+}
+
+.overlay-content {
+    background: #fff;
+    display: flex;
+    width: 30%;
+    max-width: 100%;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.overlay-right {
+    flex: 1;
+    padding: 1rem;
+}
+
+.overlay-right input, .overlay-right textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin: 0.5rem 0;
+    border: none;
+    border-bottom: 1px solid #525252;
+}
+
+.overlay-right::placeholder {
+    font-family: "Karla" sans-serif;
+}
+
+.overlay-right p{
+    font-size: 0.75rem;
+    color: #525252;
+    font-family: "Karla", sans-serif;
+    padding: 1rem 0;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+.overlay-right button {
+    margin-top: 1rem;
+    padding: 1.3rem 4rem;
+    font-weight: bold;
+    background-color: transparent; 
+    color: #000;
+    border: 2px solid #000; 
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+  
+.overlay-right button:hover {
+    background-color: #000;
+    color: #FFF;
+}
+
+@media (max-width: 1024px){
+    .overlay-content {
+        width: 40%;
+    }
+}
+
+@media (max-width: 768px){
+    .overlay-content {
+        width: 50%;
+    }
+}
+
+@media (max-width: 686px){
+    .overlay-content {
+        width: 70%;
+    }
+}
+
+@media (max-width: 744px){
+    .section8-content p {
+        width: 400px;
+    }
+}
+
+@media (max-width: 514px){
+    .section8-content h2 {
+        font-size: 3rem;
+    }
+    .section8-content p {
+        width: 300px;
+    }
+}
+
+@media (max-width: 427px){
+    .section8-content h2 {
+        font-size: 2rem;
+    }
+    .overlay-content {
+        background: #fff;
+        display: flex;
+        width: 90%;
+        max-width: 900px;
+        padding: 2rem;
+        border-radius: 8px;
+    }
+}
+
+@media (max-width: 347px){
+    .section8-content{
+        padding: 0 3rem;
+    }
+}

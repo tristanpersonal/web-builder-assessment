@@ -1,0 +1,128 @@
+.section4-container{
+    background-color: #FFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 2rem;
+    flex-wrap: wrap;
+}
+
+.real-state-success h2, .create-unforgettable-experience h2{
+    font-family: "Playfair", serif;
+    font-size: 3rem;
+    line-height: 2.5rem;
+    padding: 1.5rem 0;
+}
+
+.real-state-success p, .create-unforgettable-experience p,
+.partners-communication p, .partners-communication-rightcolumn ul li
+{
+    font-family: "Karla", serif;
+    line-height: 2rem;
+}
+
+.real-state-success img, .create-unforgettable-experience img{
+    width: 400px;
+    height: 400px;
+    max-width: 100%;
+    height: auto;
+}
+
+.real-state-success, .create-unforgettable-experience{
+    width: 400px;
+}
+
+.partners-communication {
+    background-color: #FFF;
+    padding: 2rem 0;
+}
+
+.partners-communication-rightcolumn h2{
+    font-family: "Playfair", serif;
+    font-size: 3rem;
+}
+
+.partners-communication-rightcolumn p{
+    padding: 2rem 0;
+}
+
+.partners-communication-column{
+    display: flex;
+    flex-direction: row;
+    padding: 0 4rem;
+    flex-wrap: wrap;
+    column-gap: 1rem;
+    justify-content: space-evenly;
+}
+
+.partners-communication-leftcolumn img{
+    width: 600px;
+    height: 400px;
+}
+
+.partners-communication-rightcolumn{
+    width: 500px;
+}
+
+.partners-communication-rightcolumn h3{
+    font-family: "Karla", serif;
+    padding: 1rem 0;
+}
+
+.partners-communication-rightcolumn ul {
+    list-style-type: disc;
+}
+
+@media (max-width: 746px) {
+    .partners-communication-leftcolumn img{
+        width: 500px;
+        height: 400px;
+    }
+}
+
+@media (max-width: 625px) {
+    .partners-communication-leftcolumn img{
+        width: 400px;
+        height: 300px;
+    }
+}
+
+@media (max-width: 525px) {
+    .partners-communication-leftcolumn img{
+        width: 310px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 863px) {
+    .section4-container{
+        row-gap: 25px;
+    }
+}
+@media (max-width: 493px) {
+    .partners-communication-rightcolumn h2, 
+    .real-state-success h2, 
+    .create-unforgettable-experience h2{
+        font-size: 2.5rem;
+    }
+    .partners-communication{
+        padding-top: 0;
+    }
+    .partners-communication-column{
+        padding: 0 2rem;
+    }
+}
+@media (max-width: 417px) {
+    .partners-communication-rightcolumn h2, 
+    .real-state-success h2, 
+    .create-unforgettable-experience h2{
+        font-size: 2rem;
+    }
+}
+@media (max-width: 360px) {
+    .partners-communication-rightcolumn h2, 
+    .real-state-success h2, 
+    .create-unforgettable-experience h2{
+        font-size: 1.5rem;
+    }
+}
